@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local1="clr-namespace:traveling1.Vistas"
+                  x:Class="traveling1.HomePage"
+                  BackgroundColor="White">
+
+    
+    <MasterDetailPage.Master>
+
+        <ContentPage  Title="Maestro">
+            <StackLayout BackgroundColor="#ffffff" Orientation="Vertical">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="#326f90" HeightRequest="120" Orientation="Horizontal" Padding="10">
+                        <Frame HeightRequest="25" WidthRequest="25" CornerRadius="30" VerticalOptions="Center" 
+                           BackgroundColor="White" Margin="10">
+                            <Label Text="R" FontAttributes="Bold" FontSize="Large" TextColor="Black" 
+                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Frame>
+                        <StackLayout VerticalOptions="Center" Spacing="2">
+                            <Label Text="Ronald Condori Iquise" FontAttributes="Bold" FontSize="Large" TextColor="White" 
+                           Margin="10,0,0,0" VerticalOptions="Center"/>
+                            <Label Text="ronald.12@gmail.com" FontSize="Small" TextColor="White" 
+                           Margin="10,0,0,0" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                </Grid>
+                <Button Text="Inicio" BackgroundColor="Transparent" Clicked="inicio_click" />
+                <Button Text="Perfil" BackgroundColor="Transparent" Clicked="perfil_click"/>
+                <Button Text="Viajes" BackgroundColor="Transparent" Clicked="viajes_click"/>
+                <Button Text="Historial" BackgroundColor="Transparent" Clicked="historial_click"/>
+                <Button Text="Contacto" BackgroundColor="Transparent" Clicked="contacto_click"/>
+                <Button Text="Acerca De" BackgroundColor="Transparent" Clicked="acerca_click"/>
+   
+                
+            </StackLayout>
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local1:inicio/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    
+    
+    
+</MasterDetailPage>

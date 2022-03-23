@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="traveling1.RegisterPage"
+             BackgroundColor="#0e2218">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Frame BackgroundColor="#27BBB8" Padding="15" CornerRadius="10" TranslationY="-30">
+                <Label Text="REGISTRARSE" HorizontalTextAlignment="Center" TextColor="White" FontSize="37"/>
+            </Frame>
+
+            <Entry Placeholder="Ingrese su Nombre" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingrese su Apellido" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingrese su Telefono" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingrese su Correo Electronico" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingrese su Contraseña" IsPassword="True"  TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry Placeholder="Ingrese su Contraeña para Confirmar" IsPassword="True"  TextColor="Black" PlaceholderColor="Gray"></Entry>
+            
+            <Button
+                TranslationY="10"
+                VerticalOptions="Center"
+                Text="Registrarse"
+                TextColor="Black"
+                BackgroundColor="#7DD1FC"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Registrarse_Clicked"
+               ></Button>
+            <Button
+                TranslationY="15"
+                VerticalOptions="Center"
+                Text="Iniciar Session"
+                TextColor="Black"
+                BackgroundColor="#7DD1FC"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="iniciar_sesion_Clicked"
+               ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
